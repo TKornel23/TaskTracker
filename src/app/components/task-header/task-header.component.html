@@ -1,0 +1,4 @@
+<div class="d-flex justify-content-between">
+  <h1>{{ title }}</h1>
+  <button type="button" [ngClass]="isHidden ? 'btn btn-success h-75 p-2' : 'btn btn-danger h-75 p-2'" (click)="onClick()" [innerText]="isHidden ? 'Show' : 'Hide'">Hide</button>
+</div>

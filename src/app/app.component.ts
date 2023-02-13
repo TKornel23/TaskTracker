@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ToDoApp';
+  isHidden: boolean = false;
+
+  hideForm(): void {
+    this.isHidden = !this.isHidden;
+    console.log(this.isHidden);
+  }
 }

@@ -1,0 +1,13 @@
+<form class="border border-primary rounded-4 p-1" [formGroup]="addTaskForm" (ngSubmit)="onSubmit()">
+  <div class="form-group p-2">
+    <label for="name" class="">Task</label>
+    <input type="text" id="task-name"  formControlName="name" class="form-control w-100" placeholder="Add Task">
+    <label for="time" class=" mt-2">Day & time</label>
+    <input type="text"  id="task-time" formControlName="time" class="form-control" placeholder="Add Day & Time">
+    <div class=" d-flex justify-content-between w-75 mb-2 mt-2">
+      <label for="reminder" class="">Set Reminder</label>
+      <input class="form-check-input" id="task-reminder" formControlName="reminder" type="checkbox">
+    </div>
+    <button class="btn btn-dark w-100" type="submit">Save task</button>
+  </div>
+</form>
